@@ -103,7 +103,7 @@ def game_hash()
       ] }
   }
   return game_stat
-  
+
 end
 
 binding.pry
