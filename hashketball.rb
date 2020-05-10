@@ -1,4 +1,6 @@
 # Write your code here!def game_hash
+require 'Pry'
+
 def game_hash()
     game_stat =  {
     away: { team_name: 'Charlotte Hornets',
