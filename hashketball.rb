@@ -1,5 +1,5 @@
 # Write your code here!def game_hash
-require 'Pry'
+require 'pry'
 
 def game_hash()
     game_stat =  {
