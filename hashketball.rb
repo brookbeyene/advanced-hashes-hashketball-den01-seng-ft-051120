@@ -147,7 +147,7 @@ def team_colors(team_colors_wanted)
   end
 
 end
-def team_names()
+def team_names
   game_info = game_hash
   game_info.map do |team, team_name_wanted|
     return team_name_wanted[:team_name]
