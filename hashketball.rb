@@ -183,6 +183,7 @@ def player_stats(player_stat_want)
     if team_on[:players] == player_stat_want
       team_on[:players] each do |key, value|
         return value
+      end
       # return team_on[:players][player_stat_want].value
     end
   end
