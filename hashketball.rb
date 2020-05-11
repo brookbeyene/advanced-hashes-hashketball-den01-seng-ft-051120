@@ -53,7 +53,7 @@ def game_hash()
           slam_dunks: 12 }
             ] },
     home: { team_name: 'Brooklyn Nets',
-      colors: %w[Black White],
+      colors: ['Black', 'White'],
       players: [
         { player_name: 'Alan Anderson',
           number: 0,
@@ -107,3 +107,7 @@ def game_hash()
 end
 
 # binding.pry
+
+def num_points_scored(player_name)
+  game_hash
+end
