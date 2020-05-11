@@ -108,12 +108,14 @@ end
 
 
 
-def num_points_scored(player_name)
+def num_points_scored(player_name_want)
 
   game_info = game_hash
   if game_info.each do |location_played, team_info|
     p location_played
-
   end
-  binding.pry
+
+
+
 end
+binding.pry
