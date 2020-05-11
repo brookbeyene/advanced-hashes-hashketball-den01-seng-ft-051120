@@ -187,7 +187,7 @@ def player_stats(player_stat_want)
                         
                         return p_info
                     end
-                end  
+                end
             end
         end
 
