@@ -177,4 +177,9 @@ def player_numbers(team_name_wanted)
   return player_number_stack
 end
 
+def player_stats(player_stat_want)
+  game_info = game_hash
+  game_info.each do |location_played, team_on|
+    if team_on[:players] == player_stat_want
+      return team_on[:players][player_stat_want]
 # binding.pry
