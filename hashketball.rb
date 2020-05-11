@@ -180,12 +180,18 @@ end
 def player_stats(player_stat_want)
   game_info = game_hash
   game_info.each do |location_played, team_on|
-    if team_on[:players] == player_stat_want
-      team_on[:players].each do |key, value|
-        return key[:player_name]
-      end
-      # return team_on[:players][player_stat_want].value
-    end
+      team_on.each do|p_name, p_stat|
+            if p_name == :players
+                p_stat.each do |p_info|
+                    if player_stat_want == p_info[:player_name]
+                        # p_info.delete(:player_name)
+                        return p_info
+                    end
+                end  
+            end
+        end
+
   end
 end
+
 # binding.pry
