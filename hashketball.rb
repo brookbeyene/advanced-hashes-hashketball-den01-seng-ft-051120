@@ -163,6 +163,8 @@ def player_numbers(team_name_wanted)
     if team_name_looking[:team_name] == team_name_wanted
       team_name_looking[:team_name][team_name_wanted].each do |p_numbers|
         player_number_stack.push(team_name_looking[:team_name][team_name_wanted][:numbers])
+      end
+    end
 
 
   end
