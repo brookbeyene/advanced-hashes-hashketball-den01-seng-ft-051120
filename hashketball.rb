@@ -151,4 +151,7 @@ def team_names()
   game_info = game_hash
   game_info.each do |team_name_wanted|
     return team_name_wanted[:team_name]
+  end
+end
+
 # binding.pry
