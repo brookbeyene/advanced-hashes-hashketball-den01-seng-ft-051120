@@ -117,7 +117,7 @@ def num_points_scored(player_name_want)
         return player_infos[:points]
       end
     end
-        
+
   end
 
 
