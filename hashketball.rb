@@ -194,4 +194,19 @@ def player_stats(player_stat_want)
   end
 end
 
+def big_shoe_rebounds
+  largest_siz = 0
+  rebound = 0
+  game_info = game_hash
+  game_info.each do |location_played, teams_info|
+    teams_info[:players].each do |player_on_deck|
+      if player_on_deck[:shoe] > largest_siz
+        largest_siz = player_on_deck[:shoe]
+        rebound = player_on_deck[:rebounds]
+      end
+    end
+  end
+end
+    
+
 # binding.pry
