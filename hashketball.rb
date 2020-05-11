@@ -149,8 +149,8 @@ def team_colors(team_colors_wanted)
 end
 def team_names()
   game_info = game_hash
-  game_info.each do |team_name_wanted|
-    return team_name_wanted.keys
+  game_info.each do |team, team_name_wanted|
+    return team_name_wanted[:team_name]
   end
 end
 
