@@ -156,4 +156,17 @@ def team_names
   return team_stack
 end
 
+def player_numbers(team_name_wanted)
+  game_info = game_hash
+  player_number_stack = []
+  game_info.map do |team, team_name_looking|
+    if team_name_looking[:team_name] == team_name_wanted
+      team_name_looking[:team_name][team_name_wanted].each do |p_numbers|
+        player_number_stack.push(team_name_looking[:team_name][team_name_wanted][:numbers])
+      
+    
+  end
+  return player_number_stack
+end
+
 # binding.pry
