@@ -149,9 +149,11 @@ def team_colors(team_colors_wanted)
 end
 def team_names
   game_info = game_hash
+  team_stack = []
   game_info.map do |team, team_name_wanted|
-    return team_name_wanted[:team_name]
+    team_stack.push( team_name_wanted[:team_name])
   end
+  return team_stack
 end
 
 # binding.pry
