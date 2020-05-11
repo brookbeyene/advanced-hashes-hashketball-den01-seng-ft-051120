@@ -109,7 +109,7 @@ end
 require 'pry'
 
 def num_points_scored(player_name)
-  
+
   game_info = game_hash
   if game_info.each do |location_played, team_info|
     p location_played
@@ -117,5 +117,3 @@ def num_points_scored(player_name)
   end
   binding.pry
 end
-
-
