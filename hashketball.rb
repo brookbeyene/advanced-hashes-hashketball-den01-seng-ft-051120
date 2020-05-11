@@ -165,7 +165,7 @@ def player_numbers(team_name_wanted)
           if p_name == :players
               p_numbers.each do |team_players|
 
-                player_number_stack.push(team_players[:numbers].value)
+                player_number_stack.push(team_players[:numbers])
             end
         end
 
