@@ -161,8 +161,14 @@ def player_numbers(team_name_wanted)
   player_number_stack = []
   game_info.map do |team, team_name_looking|
     if team_name_looking[:team_name] == team_name_wanted
-      team_name_looking[:team_name].each do |p_numbers|
-        player_number_stack.push(team_name_looking[:team_name][team_name_wanted][:numbers])
+      team_name_looking.each do |p_name, p_numbers|
+          if p_name == :players
+              p_numbers.each do |team_players|
+          
+                player_number_stack.push(team_players[:numbers])
+            end
+        end
+        
       end
     end
 
