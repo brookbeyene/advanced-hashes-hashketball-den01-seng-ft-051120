@@ -144,7 +144,7 @@ describe 'hashketball' do
 
     it 'returns the team names' do
       teams = team_names
-      expect(teams.length).to eq(17)
+      expect(teams.size).to eq(17)
       teams.each do |name|
         expect(["Brooklyn Nets", "Charlotte Hornets"]).to include(name)
       end
